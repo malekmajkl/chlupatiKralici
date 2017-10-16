@@ -19,7 +19,7 @@ public static void main(String[] args) {
 		try {
 			con = ds.getConnection();
 			stmt = con.createStatement();
-			rs = stmt.executeQuery("select name, sec from Bunnies21");
+			rs = stmt.executeQuery("select name, sex from Bunnies21");
 			while(rs.next()){
 				System.out.println("Bunny="+rs.getString("name")+", Pohlavi="+rs.getString("sex"));
 			}
